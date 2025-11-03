@@ -1,0 +1,24 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: Inter, Roboto, Sans-Serif;
+  background: #0b1020;
+  color: #e6eef8;
+}
+.app-shell {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+.sidebar {
+  width: 280px;
+}
+.main-content {
+  flex: 1;
+  min-height: calc(100vh - 64px);
+}
+.card {
+  padding: 12px;
+}

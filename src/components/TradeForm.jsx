@@ -108,7 +108,7 @@ export default function TradeForm() {
             mt: { xs: 1, sm: 2 },
           }}
         >
-          
+
           <ToggleButtonGroup
             value={side}
             exclusive
@@ -149,6 +149,18 @@ export default function TradeForm() {
             </ToggleButton>
           </ToggleButtonGroup>
 
+          
+        </Box>
+
+        <Box sx={{
+          marginTop: "20px",
+          marginBottom: "20px",
+          display: 'flex',
+          flexDirection: { xs: 'column', sm: 'row' },
+          gap: { xs: 2, sm: 1.5 },
+          alignItems: { xs: 'stretch', sm: 'center' },
+          justifyContent: 'center',
+        }}>
           <TextField
             label="Quantity"
             size="small"
@@ -185,7 +197,7 @@ export default function TradeForm() {
           >
             {side.toUpperCase()}
           </Button>
-        </Box>
+          </Box>
 
         <Typography
           variant="body2"
